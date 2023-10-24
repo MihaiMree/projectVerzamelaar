@@ -1,0 +1,131 @@
+body {
+    background-color:black ;
+    color: white;
+    font-family: "Apple Braille";
+    overflow-x:hidden;
+
+}
+.head {
+    margin: 0;
+    border-bottom: solid 2px white;
+    border-top: solid 1px white;
+    height: 15vh;
+    width: 99vw;
+}
+.home {
+    margin-top: 5vh;
+    margin-left: 5vw;
+    font-size: xx-large ;
+}
+.homeP{
+    position: absolute;
+    text-align: center;
+    left: 50vw;
+    top: 5vh;
+    border: 1px white solid;
+    width: 10vw;
+    border-radius: 10px;
+}
+.verzam{
+    position: absolute;
+    text-align: center;
+    left: 65vw;
+    top: 5vh;
+    border: 1px white solid;
+    width: 10vw;
+    border-radius: 10px;
+}
+.bestel{
+    position: absolute;
+    text-align: center;
+    left: 80vw;
+    top: 5vh;
+    border: 1px white solid;
+    width: 10vw;
+    border-radius: 10px;
+}
+.bestel:hover,.verzam:hover,.homeP:hover{
+    background-color: brown;
+
+}
+a {
+    text-decoration: none;
+    color:white;
+}
+.maintitle {
+    margin-top: 5vh;
+    height: 8vh;
+    width: 99vw;
+    text-align: center;
+    font-size: xx-large ;
+}
+.box-maintxt {
+
+    height: 60vh;
+    width: 99vw;
+
+}
+.maintxt {
+    border: 2px solid white;
+    border-radius: 20px;
+    height: 40vh ;
+    margin-top: 5vh;
+    width: 49.5vw;
+    position: relative;
+    left: 24.7245vw;
+    font-size: large;
+    padding: 10px;
+    margin-bottom: 5vh;
+}
+.flip-card {
+    margin-left: 2vw;
+    background-color: transparent;
+    width: 30vw;
+    height: 50vh;
+    perspective: 1000px;
+    display: inline-grid;
+
+
+}
+
+.flip-card-inner {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    border: 2px solid white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.flip-card-back {
+    font-size: large;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+
+}
+
+img {
+    max-width: 100%;
+    max-height: 40vh;
+}
